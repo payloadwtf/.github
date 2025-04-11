@@ -14,7 +14,7 @@ We provide lightweight SDKs to help you route transactions through the `payload.
 
 - Accepts standard base64-encoded `sendTransaction` payloads  
 - Enforces a tip-based routing policy  
-- Routes transactions to high-performance RPC providers like QuickNode, Helius, or Jito  
+- Routes transactions to high-performance RPC providers like QuickNode, Helius, etc 
 - Drops transactions that don't meet tip thresholds  
 - Logs telemetry for land rate, block inclusion rate, and tip volume  
 
