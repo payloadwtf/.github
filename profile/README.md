@@ -4,7 +4,7 @@
 
 `payload.wtf` is an edge-native routing layer for Solana transactions. It enables faster inclusion, priority lanes, and MEV-protected routing with zero protocol changes — just by wrapping your existing `sendTransaction` flow.
 
-We provide lightweight SDKs to help you route transactions through the `payload.wtf` network while automatically handling tip logic, RPC lane selection, and transaction forwarding.
+We provide lightweight SDKs to help you route transactions through the `payload` network while automatically handling tip logic, RPC lane selection, and transaction forwarding.
 
 ---
 
