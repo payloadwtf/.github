@@ -1,4 +1,4 @@
-# ⚡ payloadwtf
+# ⚡ payload.wtf
 
 **Solana transactions, tipped and turbocharged.**
 
