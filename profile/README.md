@@ -39,7 +39,7 @@ import { sendPayloadTransaction } from "@payload-wtf/web3";
 
 const signature = await sendPayloadTransaction(connection, transaction, {
   tipLamports: 100_000,
-  mode: "jito", // or "quicknode", "helius"
+  mode: "quicknode", // or "quicknode", "helius"
 });
 ```
 
@@ -55,7 +55,7 @@ Behind the scenes, we:
 - ⚡ Edge-hosted API  
 - 💸 Incentivized routing with native SOL tips  
 - 🛠 Compatible with all Solana wallets + libraries  
-- 🧠 Smart routing logic (QuickNode, Helius, Jito, etc.)  
+- 🧠 Smart routing logic (QuickNode, Helius, etc.)  
 - 📊 Land/block inclusion analytics (coming soon)
 
 ---
