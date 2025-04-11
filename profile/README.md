@@ -41,3 +41,45 @@ const signature = await sendPayloadTransaction(connection, transaction, {
   tipLamports: 100_000,
   mode: "jito", // or "quicknode", "helius"
 });
+```
+
+Behind the scenes, we:
+- Append a `SystemProgram.transfer()` to your tip wallet
+- Serialize and forward to `https://api.payload.wtf/sendTransaction`
+- Return the tx signature (or drop with a 403 if tip is missing)
+
+---
+
+## 📈 Features
+
+- ⚡ Edge-hosted API
+- 💸 Incentivized routing with native SOL tips
+- 🛠 Compatible with all Solana wallets + libraries
+- 🧠 Smart routing logic (QuickNode, Helius, Jito, etc.)
+- 📊 Land/block inclusion analytics (coming soon)
+
+---
+
+## 👷 Contributing
+
+We welcome contributions to any of the SDKs or the core infrastructure!
+
+- File an issue or feature request
+- Submit a PR in any language repo
+- Add test coverage or example projects
+
+---
+
+## 📡 Production Endpoint
+
+```bash
+POST https://api.payload.wtf/sendTransaction
+Content-Type: text/plain
+Body: base64-encoded signed Solana transaction
+```
+
+---
+
+## 📜 License
+
+MIT
